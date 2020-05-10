@@ -1,0 +1,19 @@
+# editorconfig.org
+# some editors do not have native support for EditorConfig and require a plugin.
+# http://editorconfig.org/#download
+
+# Editorconfig File
+root = true
+
+# Every file
+[*]
+
+indent_style = space
+indent_size = 4
+end_of_line = crlf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
