@@ -26,6 +26,9 @@ private _gear = switch playerSide do {
 private _license = [['license_civ_driver',false],['license_civ_boat',false],['license_civ_pilot',false],['license_civ_trucking',false],['license_civ_gun',false],['license_civ_dive',false],['license_civ_home',false],['license_civ_oil',false],['license_civ_diamond',false],['license_civ_salt',false],['license_civ_sand',false],['license_civ_iron',false],['license_civ_copper',false],['license_civ_cement',false],['license_civ_medmarijuana',false],['license_civ_cocaine',false],['license_civ_heroin',false],['license_civ_marijuana',false],['license_civ_rebel',false]];
 private _stats = [100,100,0];
 
+/*
+    DONT EDIT BELOW
+*/
 CASH = _cash;
 BANK = _bank;
 CONST(life_adminlevel, _adminlevel);
