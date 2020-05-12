@@ -13,16 +13,6 @@ disableSerialization;
 private _escSync = { 
     disableSerialization;
     private _abortButton = CONTROL(49,104);
-    private _abortTime = LIFE_SETTINGS(getNumber,"escapeMenu_timer");
-    private _timeStamp = time + _abortTime;
-
-    waitUntil {
-        _abortButton ctrlSetText format [localize "STR_NOTF_AbortESC",[(_timeStamp - time),"SS.MS"] call BIS_fnc_secondsToString];
-        _abortButton ctrlCommit 0;
-        if (dialog && {isNull (findDisplay 7300)}) then {closeDialog 0};
-
-        round(_timeStamp - time) <= 0 || {isNull (findDisplay 49)}
-    };
 
     _abortButton ctrlSetText localize "STR_DISP_INT_ABORT";
     _abortButton ctrlCommit 0;
@@ -52,7 +42,6 @@ for "_i" from 0 to 1 step 0 do {
     };
 
     //Block off our buttons first.
-    _abortButton ctrlEnable false;
     _fieldManual ctrlEnable false; //Never re-enable, blocks an old script executor.
     _fieldManual ctrlShow false;
 
