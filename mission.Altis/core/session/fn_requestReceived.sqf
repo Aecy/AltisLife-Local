@@ -21,7 +21,7 @@ private _positions = [3685.63, 13016.3, 0.00119972];
 private _gear = switch playerSide do {
     case west: { [] };
     case independent: { [] };
-    default { ['U_C_Poloshirt_stripped','','','G_Bandanna_aviator','',['ItemMap','ItemCompass','ItemWatch'],[],[],[],[],[],[],[],[],['','','',''],['','','',''],[]] };
+    default { ['U_C_Poloshirt_stripped','','','G_Bandanna_aviator','',['ItemMap','ItemCompass','ItemWatch'],'','',[],[],[],[],[],[],['','','',''],['','','',''],[]] };
 };
 private _license = [['license_civ_driver',false],['license_civ_boat',false],['license_civ_pilot',false],['license_civ_trucking',false],['license_civ_gun',false],['license_civ_dive',false],['license_civ_home',false],['license_civ_oil',false],['license_civ_diamond',false],['license_civ_salt',false],['license_civ_sand',false],['license_civ_iron',false],['license_civ_copper',false],['license_civ_cement',false],['license_civ_medmarijuana',false],['license_civ_cocaine',false],['license_civ_heroin',false],['license_civ_marijuana',false],['license_civ_rebel',false]];
 private _stats = [100,100,0];
